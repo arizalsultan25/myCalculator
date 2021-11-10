@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+
+    <!-- import css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator-body">
+            <form name="calculator">
+                <h3>myCalculator</h3>
+                <div class="row result">
+                    <div class="col">
+                        <input type="button" class="btn-clear" value="C" onclick="reset()">
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="result" class="calculator-result" readonly />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="button" value="7" name="btn7" class="btn" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="8" name="btn8" class="btn" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="9" name="btn9" class="btn" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="÷" name="btndiv" class="btn-action" onclick="press('/')">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <input type="button" value="4" name="btn4" class="btn" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="5" name="btn5" class="btn" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="6" name="btn6" class="btn" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="x" name="btntimes" class="btn-action" onclick="press('*')">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <input type="button" value="1" name="btn1" class="btn" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="2" name="btn2" class="btn" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="3" name="btn3" class="btn" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="+" name="btnplus" class="btn-action" onclick="press(this.value)">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <input type="button" value="0" name="btn0" class="btn" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="." name="btndecimal" class="btn-action" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="-" name="btnminus" class="btn-action" onclick="press(this.value)">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="=" name="btnequal" class="btn-action" onclick="calculate()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

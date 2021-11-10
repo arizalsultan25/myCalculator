@@ -1,0 +1,26 @@
+/* Tab Media Query */
+@media (max-width: 1000px){
+    .container{
+        width: 500px;
+    }
+}
+
+/* Smartphone Media Query */
+@media (max-width: 670px) {
+    .container{
+        width: 420px;
+    }
+}
+
+/* Small */
+@media (max-width: 400px) {
+    body {
+        min-width: 400px !important;
+    }
+
+    .container{
+        width: 320px;
+        min-width: 320px;
+        overflow: auto;
+    }
+}
